@@ -1,0 +1,17 @@
+{
+  "name": "doorlock-pi",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.11.0",
+    "fastify-static": "^2.5.1",
+    "onoff": "^5.0.1"
+  }
+}
