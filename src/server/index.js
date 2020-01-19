@@ -32,6 +32,7 @@ fastify.get("/openDoor", (request, reply) =>{
     door.writeSync(1)
     setTimeout(() => door.writeSync(0), 2000)
   }
+  reply.send({ok: true})
 });
 
 // Run the server!
