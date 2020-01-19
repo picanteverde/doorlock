@@ -5,7 +5,7 @@ const fastify = require("fastify")({ logger: true });
 
 const GPIOpath = '/sys/class/gpio/export'
 
-const onRPI = false
+let onRPI = false
 
 let Gpio, door
 
@@ -36,7 +36,7 @@ fastify.get("/openDoor", (request, reply) =>{
 });
 
 // Run the server!
-fastify.listen(3000, function(err, address) {
+fastify.listen(3000, '*', function(err, address) {
   if (err) {
     fastify.log.error(err);
     process.exit(1);
