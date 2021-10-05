@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "fastify": "^2.11.0",
-    "fastify-static": "^2.5.1",
+    "fastify-static": "^4.2.4",
     "onoff": "^5.0.1"
   }
 }
